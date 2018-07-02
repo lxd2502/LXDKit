@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LXDKit_Example' do
+  pod 'LXDKit', :path => '../'
+
+  target 'LXDKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
